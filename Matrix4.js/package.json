@@ -1,0 +1,24 @@
+{
+  "name": "Matrix4",
+  "version": "0.1.0",
+  "description": "Javascript Matrix 4x4, Column-major order.",
+  "main": "index.js",
+  "author": "skyfei",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "jasmine-node": "^1.14.5",
+    "rollup": "^0.36.3",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-replace": "^1.1.1",
+    "uglify-js": "^2.7.3",
+    "zlib": "^1.0.5"
+  },
+  "scripts": {
+    "test": "yarn run build && yarn run jasmine",
+    "build": "node build/build.js",
+    "jasmine": "jasmine-node spec"
+  }
+}
